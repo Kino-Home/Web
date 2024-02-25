@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <script src="//web.kino-home.site/playerjs.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="player"></div>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var fileUrl = urlParams.get('file');
+        var player = new Playerjs({ id: "player", file: fileUrl });
+    </script>
+</body>
+</html>
